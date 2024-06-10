@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.fullscreen {
+  background-image: url(../images/fundoacademia.jpg);
+  padding: 20px;
+}
+
+.container {
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+h1 {
+  color: #2cf012;
+}
+
+.campos {
+  display: flex;
+  width: 100%;
+flex-direction: column;
+  background-color: #414047;
+  border-radius: 8px;
+
+  padding: 30px 20px;
+  row-gap: 10px;
+}
+
+.campos label {
+  color: #fcfcf4;
+  font-weight: 400;
+}
+
+
+.campos input, select{
+border: none;
+border-radius: 6px;
+background-color: #FCFCF4;
+padding: 10px 4px;
+
+outline: none;
+
+color: #1a1535;
+font-weight: 600;
+
+}
+.inputs{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 10px;
+
+}
+
+.inputGroup{
+
+display: flex;
+flex-direction: column;
+width: 40%;
+row-gap: 10px;
+
+
+}
+
+#calcular{
+
+background-color: #ad9aa5;
+color: #25251c;
+border: none;
+font-weight: 600;
+font-size: 20px;
+border-radius: 8px;
+
+padding: 10px 0;
+
+
+}
+
+#limpar{
+
+border: 2px solid #eee5ea;
+background: transparent;
+
+color: #FCFCF4;
+font-size: 16px;
+border-radius: 8px;
+padding: 10px 0;
+
+}
+.resultados {
+  background-color: #5f535a;
+  width: 100%;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  color: #FCFCF4;
+}
+
+.cima{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+row-gap: 5px;
+border-bottom: 1px solid #1c3515;
+padding-bottom: 10px;
+margin-bottom: 10px;
+
+}
+#nome_tela{
+
+
+
+    color: #c1dfc5;
+    font-weight: 700;
+}
+
+#idade_tela, #sexo_tela{
+
+color: #181815;
+
+}
+
+#sexo_tela{
+
+font-weight: 400;
+font-size: 16px;
+
+}
+
+.nomeIdade{
+
+display: flex;
+
+}
+
+
+.pesoAltura{
+  display: flex;
+
+}
+
+#altura_tela, #peso_tela{
+
+
+  color: #0b0b0c;
+}
+
+#resultado{
+  color: #41e02c;
+  font-weight: 700;
+  font-size: 96px;
+
+
+}
+
+button{
+
+  cursor: pointer;
+}
+
+#pdf{
+
+  border: 0;
+width: 100%;
+padding: 0px 20px;
+background-color: #b1b191;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+padding: 10px 0;
+
+  font-size: 32px;
+  color: #1a1535;
+  font-weight: 900;
+}
+
+
+#pdf img{
+
+
+border-right: 3px solid #1A1535;;
+padding-right: 5px;
+margin-right: 5px;
+
+}
+
+
+.file{
+  background-color: #daccd4;
+  width: 100%;
+  height: 1055px;
+  padding: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #0c0c0a;
+
+
+}
+
+
+.file h2{
+  font-size: 2rem;
+}
+
+.file p{
+  font-size: 1.4rem;
+}
+
+.dados{
+  margin-bottom: 16px;
+}
+
+.generate{
+text-align: center;
+color: #161614;
+
+}
+
+.generate span{
+
+color: #1A1535;
+
+
+}
+
+.fileTitle{
+
+color: #181817;
+font-size: 4rem;
+text-align: center;
+margin-bottom: 1.5rem;
+
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="images/link.jpg" type="image/png">
+    <meta name="description" content="PWA de uma Calculadora de IMC">
+    <link rel="apple-touch-icon" href="images/icon-216px.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1535" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+  </head>
+
+  <body class="fullscreen">
+    <div class="container">
+      <h1>Calculadora IMC</h1>
+
+      <!-- Inicio dos Inputs -->
+      <div class="campos">
+        <label for="nome">NOME:</label
+        ><input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          autocomplete="off"
+        />
+
+        <div class="inputs">
+          <div class="inputGroup">
+            <label for="idade">IDADE:</label
+            ><input
+              type="text"
+              id="idade"
+              name="idade"
+              placeholder="Digite sua idade"
+              autocomplete="off"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="sexo">SEXO:</label>
+            <select id="sexo" name="sexo">
+              <option value="MASCULINO">Masculino</option>
+              <option value="FEMININO">Feminino</option>              
+            </select>
+          </div>
+
+          <div class="inputGroup">
+            <label for="altura">ALTURA:</label
+            ><input
+              type="number"
+              id="altura"
+              name="altura"
+              placeholder="Digite sua altura"
+              autocomplete="off"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="peso">PESO:</label
+            ><input
+              type="number"
+              id="peso"
+              name="peso"
+              placeholder="Digite seu peso"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <button id="calcular" type="button" onclick="calcular()">
+          Calcular IMC
+        </button>
+
+        <button id="limpar" type="button" onclick="limpar()">
+          Limpar Campos
+        </button>
+      </div>
+      <!-- Fim dos Inputs -->
+
+      <!-- Inicio dos Resultados -->
+      <div class="resultados">
+        <div class="cima" id="cima">
+          <div class="nomeIdade">
+            <h1 id="nome_tela"></h1>
+            <h1 id="idade_tela"></h1>
+          </div>
+          <h1 id="sexo_tela"></h1>
+
+          <div class="pesoAltura">
+            <h1 id="altura_tela"></h1>
+            <h1 id="peso_tela"></h1>
+          </div>
+        </div>
+        Seu IMC é:
+        <h1 id="resultado">0</h1>
+        <h1 id="tabela"></h1>
+      </div>
+
+      <!-- Fim dos Resultados -->
+
+      <button onclick="downloadPDF()" id="pdf"> <img src="images/Vector.svg" alt=""> Gerar PDF</button>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
